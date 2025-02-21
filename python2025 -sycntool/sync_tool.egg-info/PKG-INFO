@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: sync_tool
+Version: 1.1.0
+Requires-Dist: xxhash>=3.0.0
+Requires-Dist: tkintertable>=1.3
+Dynamic: requires-dist

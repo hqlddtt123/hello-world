@@ -1,0 +1,3 @@
+[console_scripts]
+sync-gui = sync_tool.ui.gui:main
+sync-tool = sync_tool.cli.parser:main

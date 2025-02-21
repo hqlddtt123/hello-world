@@ -1,0 +1,9 @@
+2025-02-21 20:00:35,866 [INFO] 开始扫描目录...
+2025-02-21 20:00:35,866 [INFO] 开始同步操作（模拟运行）
+2025-02-21 20:00:35,866 [ERROR] 严重错误: 'FileSynchronizer' object has no attribute 'gui'
+Traceback (most recent call last):
+  File "D:\python2025\sync_tool\cli\parser.py", line 890, in main
+    syncer.execute_sync(dry_run=args.dry_run)
+  File "D:\python2025\sync_tool\cli\parser.py", line 223, in execute_sync
+    self.gui.log(f"同步完成，共处理 {total_ops} 项操作", "INFO")
+AttributeError: 'FileSynchronizer' object has no attribute 'gui'

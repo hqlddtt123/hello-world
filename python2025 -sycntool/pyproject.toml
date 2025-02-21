@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sync_tool"
+version = "1.0.0"
+description = "Advanced File Synchronization Tool"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+xxhash = "^3.0.0"
+tk = { version = "*", python = "<3.12" }  # 使用系统tkinter
+tqdm = "^4.62.3"  # 进度条支持
+
+[tool.poetry.scripts]
+sync-tool = "sync_tool.cli.controller:main"
+sync-tool-gui = "sync_tool.gui.main_window:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api" 
